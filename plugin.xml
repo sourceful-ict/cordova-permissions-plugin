@@ -1,0 +1,14 @@
+<plugin id="cordova-plugin-permissions" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Permissions Plugin</name>
+    <description>Plugin to add permissions to AndroidManifest.xml</description>
+    <license>MIT</license>
+    <keywords>cordova, permissions</keywords>
+    
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.RECORD_AUDIO" />
+            <uses-permission android:name="android.permission.MANAGE_AUDIO_SETTINGS" />
+        </config-file>
+    </platform>
+</plugin>
